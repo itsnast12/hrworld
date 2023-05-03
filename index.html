@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="body">
+
+    <div class="buttonsmenu">
+
+        <button class="logo">
+          <img  src="media/logo.png">
+        </button>
+
+        <a class="menu mar" href="#personalinformation">
+          <img src="media/11.png">
+        </a>
+
+        
+          <a class="menu" href="#balances">
+          <img src="media/2.png">
+          </a>
+       
+
+        <a class="menu" href="#myteam">
+          <img src="media/3.png">
+        </a>
+      
+    </div>
+
+    <div class="main">
+      <nav class="nav">
+        <div class="buttons">
+          <button class="but" type="button">
+            <img class="icon" src="media/market.svg" alt="" />
+          </button>
+          <button class="but" type="button">
+            <img class="icon" src="media/finance.svg" alt="" />
+          </button>
+          <div>
+            <button class="but down" type="button">
+            <img class="icon" src="media/project.svg" alt="" />
+            <img class="row" src="media/row.svg" alt="" />
+          </button>
+
+           <ul class="dropdown-list1">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/area.png">
+                          <a href="index.html">Personal area</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/packages.png">
+                          <a href="packages.html">Packages</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="settings">
+                          <img src="media/settings.png">
+                          <a href="settings.html">Settings</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/exit.png">
+                          <a href="index.html">Exit</a>
+                        </li>
+                    </ul> 
+          </div>
+          <button class="but" type="button">
+            <img class="icon" src="media/community.svg" alt="" />
+          </button>
+
+          <div class="form-group">
+              
+                <div class="dropdown"></div>
+                    <button class="signin">
+                        <img class="photo" src="media/img.jpg" alt="" />
+                        <p>Name L.</p>
+                        <img class="row" src="media/row.svg" alt="" />
+                    </button>
+                    <ul class="dropdown-list2">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/area.png">
+                          <a href="index.html">Personal area</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/packages.png">
+                          <a href="packages.html">Packages</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="settings">
+                          <img src="media/settings.png">
+                          <a href="settings.html">Settings</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/exit.png">
+                          <a href="index.html">Exit</a>
+                        </li>
+                    </ul>
+                </div>
+
+            <button class=" burger" type="button">
+            <img class="icon" src="media/burger.svg" alt="" />
+          </button>
+
+        </div>
+      </nav>
+      <div class="information">
+        <p id="personalinformation">Personal information</p>
+        <div class="personal">
+          <img class="profile" src="media/img.jpg" alt="">
+          <div class="perinf">
+                <div class="title">
+                <h1 class="textleft">Username: </h1>
+                <h1 class="textleft">First/last name: </h1>
+                <h1 class="textleft">Referal ID: </h1>
+                <h1 class="textleft">Referal link: </h1>
+                <h1 class="textleft">Status: </h1>
+                <h1 class="textleft">Leader: </h1>
+              </div>
+              <div class="title">
+                <h1 class="textright">HRBP48</h1>
+                <h1 class="textright">Guzel Usmanova</h1>
+                <h1 class="textright">123456</h1>
+                <a class="textright" href="ttp://referal.link.referalID.com">ttp://referal.link.referalID.com</a>
+                <h1 class="textright">Level 1</h1>
+                <h1 class="textright">Guzel Usmanova</h1>
+              </div>
+          </div>
+          
+
+        </div>
+
+        <p id="balances">Balances</p>
+        <div class="balances">
+          <table>
+            <tr><th></th><th>usdt</th><th>hrwt</th></tr> <!--ряд с ячейками заголовков-->
+            <tr><th>Personal</th><td>00.00</td><td>00.00</td></tr>
+            <tr><th>General</th><td>00.00</td><td>00.00</td></tr>
+            <tr><th>Team</th><td>00.00</td><td>00.00</td></tr>
+            <tr><th>Available <br>for withdrawal</th><td>00.00</td><td>00.00</td></tr>
+            <tr><th></th><th><button>withd</button></th><th><button>withd</button></th></tr>
+          </table>
+        </div>
+
+        <p id="myteam">My team</p>
+        <div class="forscroll" style="display: flex; align-items: center;">
+          <button id="left" class="scrollbutton">
+                  <img src="media/rowleft.svg">
+          </button>
+        <div class="wrapper">
+        
+            <div class="slider">
+                
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">fvwvwv</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                <div class="myteam">
+                  <img class="profileteam" src="media/img.jpg" alt="">
+                  <p class="team">Username</p>
+                  <p class="team">Status</p>
+                  <p class="team">Balance</p>
+                </div>
+                
+            </div>
+
+           
+        </div>
+         <button id="right" class="scrollbutton">
+              <img src="media/rowright.svg">
+        </button>
+        </div>
+
+
+      </div>
+
+      <div class="empty_team">
+        <p>There is no one in your team yet</p>
+      </div>
+
+
+    </div>
+  </body>
+</html>

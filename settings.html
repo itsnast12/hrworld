@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script-settings.js" defer></script>
+  </head>
+  <body class="body">
+
+    <div class="buttonsmenu">
+
+      <button class="logo">
+        <img  src="media/logo.png">
+      </button>
+
+      <a class="menu exit" href="index.html">
+        <img src="media/exit.png">
+      </a>
+
+    </div>
+
+    <div class="main">
+
+     <nav class="nav">
+        <div class="buttons">
+          <button class="but" type="button">
+            <img class="icon" src="media/market.svg" alt="" />
+          </button>
+          <button class="but" type="button">
+            <img class="icon" src="media/finance.svg" alt="" />
+          </button>
+          <div>
+            <button class="but down" type="button">
+            <img class="icon" src="media/project.svg" alt="" />
+            <img class="row" src="media/row.svg" alt="" />
+          </button>
+
+           <ul class="dropdown-list1">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/area.png">
+                          <a href="index.html">Personal area</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/packages.png">
+                          <a href="packages.html">Packages</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="settings">
+                          <img src="media/settings.png">
+                          <a href="settings.html">Settings</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/exit.png">
+                          <a href="index.html">Exit</a>
+                        </li>
+                    </ul> 
+          </div>
+          <button class="but" type="button">
+            <img class="icon" src="media/community.svg" alt="" />
+          </button>
+
+          <div class="form-group">
+              
+                <div class="dropdown"></div>
+                    <button class="signin">
+                        <img class="photo" src="media/img.jpg" alt="" />
+                        <p>Name L.</p>
+                        <img class="row" src="media/row.svg" alt="" />
+                    </button>
+                    <ul class="dropdown-list2">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/area.png">
+                          <a href="index.html">Personal area</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/packages.png">
+                          <a href="packages.html">Packages</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="settings">
+                          <img src="media/settings.png">
+                          <a href="settings.html">Settings</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/exit.png">
+                          <a href="index.html">Exit</a>
+                        </li>
+                    </ul>
+                </div>
+
+            <button class=" burger" type="button">
+            <img class="icon" src="media/burger.svg" alt="" />
+          </button>
+
+        </div>
+      </nav>
+
+      <p class="title_packages" id="myteam">Settings</p>
+
+       <div class="buttons-settings" style="display: flex;">
+         <button class="settings area open">Personal data</button>
+         <button class="settings photoset">Photo</button>
+         <button class="settings linkset">Linking a wallet</button>
+       </div>
+
+       <div class="line"></div>
+
+       <div class="content-item  open">
+         
+          <p class="settings_text">Basic information</p>
+
+          <div class="personalarea" >
+            <p class="for_input">First name</p>
+            <input type="text" placeholder="Guzel">
+          </div>
+
+          <div class="personalarea">
+            <p class="for_input">Last name</p>
+            <input type="text" placeholder="Usmanova">
+          </div>
+
+          <p class="settings_text">Location</p>
+
+          <div class="personalarea">
+            <p class="for_input">Country</p>
+            <input type="text" placeholder="Russia">
+          </div>
+
+          <div class="personalarea">
+            <p class="for_input">Zipcode</p>
+            <input type="text" placeholder="656565">
+          </div>
+
+          <p class="settings_text">Contact information</p>
+
+          <div class="personalarea">
+            <p class="for_input">E-mail</p>
+            <input type="text" placeholder="">
+          </div>
+
+          <div class="personalarea">
+            <p class="error">*please enter e-mail</p>
+            <p class="for_input"></p>
+          </div>
+
+          <div class="personalarea">
+            <p class="for_input">Phone</p>
+            <input type="text" placeholder="">
+          </div>
+          <div class="personalarea">
+            <p class="error">*please enter phone number</p>
+            <p class="for_input"></p>
+          </div>
+
+          <div class="personalarea">
+            <p class="for_input"></p>
+            <button class="save">Save</button>
+          </div>
+
+
+       </div>
+
+       <div class="content-item photosettings ">
+        <div class="personalarea" style="padding-top: 20px;">
+          <img class="change_photo" src="media/img.jpg" alt=""/>
+
+         <div>
+          <button class="upload">Upload a photo</button>
+          <button class="upload" style="margin-top: 30px;">Save</button>
+         </div>
+        </div>
+        
+       </div>
+ 
+       <div class="content-item wallet ">
+          <div class="personalarea" style="padding-top:20px">
+            <p class="for_input">Address <br> of Metamask wallet</p>
+            <input type="text" placeholder="">
+          </div>
+          <div class="personalarea">
+            <p class="error">*please enter address</p>
+            <p class="for_input"></p>
+          </div>
+          <div class="personalarea">
+            <p class="for_input"></p>
+            <button class="save">Save</button>
+          </div>
+       </div>
+
+
+      
+  </body>
+</html>
+
+
+
+
+
+
