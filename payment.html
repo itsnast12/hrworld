@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="payment.js" defer></script>
+  </head>
+  <body class="body">
+
+    <div class="buttonsmenu">
+
+        <button class="logo">
+          <img  src="media/logo.png">
+        </button>
+
+        <!-- <a class="menu mar" href="#">
+          <img src="media/packages.png">
+        </a>
+ -->
+        
+          <a class="menu exit" href="index.html">
+          <img src="media/exit.png">
+          </a>
+       
+
+       
+      
+    </div>
+
+    <div class="main">
+      <nav class="nav">
+        <div class="buttons">
+          <button class="but" type="button">
+            <img class="icon" src="media/market.svg" alt="" />
+          </button>
+          <button class="but" type="button">
+            <img class="icon" src="media/finance.svg" alt="" />
+          </button>
+          <div>
+            <button class="but down" type="button">
+            <img class="icon" src="media/project.svg" alt="" />
+            <img class="row" src="media/row.svg" alt="" />
+          </button>
+
+           <ul class="dropdown-list1">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/area.png">
+                          <a href="index.html">Personal area</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/packages.png">
+                          <a href="packages.html">Packages</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="settings">
+                          <img src="media/settings.png">
+                          <a href="settings.html">Settings</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/exit.png">
+                          <a href="index.html">Exit</a>
+                        </li>
+                    </ul> 
+          </div>
+          <button class="but" type="button">
+            <img class="icon" src="media/community.svg" alt="" />
+          </button>
+
+          <div class="form-group">
+              
+                <div class="dropdown"></div>
+                    <button class="signin">
+                        <img class="photo" src="media/img.jpg" alt="" />
+                        <p>Name L.</p>
+                        <img class="row" src="media/row.svg" alt="" />
+                    </button>
+                    <ul class="dropdown-list2">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/area.png">
+                          <a href="index.html">Personal area</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/packages.png">
+                          <a href="packages.html">Packages</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="settings">
+                          <img src="media/settings.png">
+                          <a href="settings.html">Settings</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/exit.png">
+                          <a href="index.html">Exit</a>
+                        </li>
+                    </ul>
+                </div>
+
+            <button class=" burger" type="button">
+            <img class="icon" src="media/burger.svg" alt="" />
+          </button>
+
+        </div>
+      </nav>
+
+      <p class="title_packages" id="myteam">Order list</p>
+
+      <div class="payment_blocks">
+        <div class="order">
+            <p class="price" style="margin-bottom: 20px;">$250 <br> 25000 HRWT</p>
+            <p class="describe">Всё что в пакете за 100$ <br>+ Курс по P2P заработку</p>
+            <button class="curs">Курс на данный момент</button>
+            <p class="up">Адресс кошелька:</p>
+            <p class="describe">0x04a5739471B210815c69f08F6358914dE194c843</p>
+            <p class="up">Сеть блокчейн:</p>
+            <p class="describe">Polygon</p>
+            <img src="media/qr.jpg" alt="">
+        </div>
+
+        <div class="details" style="display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; ">
+                <p class="detail">Order details</p>
+                <button class="back">
+                    <a href="packages.html" style="text-decoration: none;">← Назад к пакетам</a>
+                </button>
+            </div>
+            <p class="description_order">Order description</p>
+            <p class="points">• 4 разделов <br>• 14 лекций <br>• Общая продолжительность 3 ч 2 мин <br>На этом курсе мы научим вас P2P Арбитражу, арбитражу в криптовалюте. В двух словах Р2Р - это рынок, где есть продавцы и есть покупатели. Первое время после обучения уверенно можно зарабатывать как два-три процента от суммы стартового капитала.</p>
+            <div style="display: flex;  margin: 0; margin-top: 10px;">
+                <p class="total">Total: </p>
+                <p class="price_pay">250.00 USDT</p>
+            </div>
+            
+            <div class="personalarea" style="margin-top: 10px;">
+                <p class="for_input">Package </p>
+                <input type="text" placeholder="">
+            </div>
+            <div class="personalarea">
+                <p class="for_input">First/Last name</p>
+                <input type="text" placeholder="">
+            </div>
+            <div class="personalarea">
+                <p class="for_input">E-mail</p>
+                <input type="text" placeholder="">
+            </div>
+
+            <div class="personalarea" style="margin-top: 10px;">
+                <p class="for_input"></p>
+                <button class="save">Я оплатил</button>
+              </div>
+        </div>
+
+      </div>
+        
+      
+
+
+      </div>
+    </div>
+  </body>
+</html>

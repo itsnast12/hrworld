@@ -612,6 +612,150 @@ input{
   align-items: center
 }
 
+.payment_blocks{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order{
+  padding: 20px;
+  width: 30%;
+  height: max-content;
+  background: linear-gradient(168.64deg, #2EECC5 9.31%, #292929 42.39%, #282828 111.76%);
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.curs{
+  filter: drop-shadow(0px 0px 62px #2eecc5);
+  width: max-content;
+  height: 40px;
+  text-align: center;
+  border-radius: 49px;
+  background: rgba(46, 236, 197, 0.1);
+  border: 1.5px solid #2eecc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.curs{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.back{
+  filter: drop-shadow(0px 0px 62px #2eecc5);
+  width: max-content;
+  height: 40px;
+  text-align: center;
+  border-radius: 49px;
+  background: rgba(46, 236, 197, 0.1);
+  border: 1.5px solid #2eecc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #504E4E;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.up{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 650;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0;
+  margin-top: 20px;
+}
+
+.order img{
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.detail{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #504E4E;
+  margin: 0;
+}
+
+.details{
+  width: max-content;
+}
+
+.description_order{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  color: #504E4E;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.points{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: #504E4E;
+}
+
+.total{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  color: #504E4E;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.price_pay{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #504E4E;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 550px){
   .main{
     align-self: center;
@@ -961,6 +1105,47 @@ input{
     font-size: 14px;
     color: #504E4E;
     cursor: pointer;
+  }
+
+  .payment_blocks{
+    flex-direction: column;
+  }
+
+  .order{
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+
+  .order img{
+    height: 130px;
+    width: 130px;
+  }
+
+  .curs{
+    font-size: 12px;
+  }
+
+  .points{
+    width: 350px;
+  }
+
+  .back a{
+    font-size: 14px;
+  }
+
+  .detail{
+    font-size: 20px;
+  }
+
+  .description_order, .total, .price_pay{
+    font-size: 18px;
+  }
+
+  .points{
+    font-size: 15px;
   }
 
 }
