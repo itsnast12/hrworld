@@ -608,7 +608,7 @@ input{
 .personalarea{
   display: flex; 
   justify-content: space-between; 
-  width: 55%; 
+  width: 90%; 
   align-items: center
 }
 
@@ -691,8 +691,8 @@ input{
 }
 
 .order img{
-  height: 200px;
-  width: 200px;
+  height: 60px;
+  width: 60px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -707,7 +707,7 @@ input{
 }
 
 .details{
-  width: max-content;
+  width: 60%;
 }
 
 .description_order{
