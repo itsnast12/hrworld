@@ -221,17 +221,17 @@ nav {
   justify-content: center;
 }
 
-table{
+.table{
   width: 800px;
   height: 400px;
 
 }
 
-table, td, th {
+.table, td, th {
   text-align:center
 }
 
-table th{
+.table th{
   width: 200px;
   font-family: 'Open Sans';
   font-style: normal;
@@ -241,7 +241,7 @@ table th{
   color: #438297;
 }
 
-table td{
+.table td{
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -249,7 +249,7 @@ table td{
   color: #3D3D3F
 }
 
-table button{
+.table button{
   filter: drop-shadow(0px 0px 62px #2eecc5);
   width: max-content;
   height: 40px;
@@ -379,6 +379,7 @@ text-decoration: none;
   padding-right: 30px;
   position: absolute;
   display: none;
+  z-index: 1;
 }
 
 .dropdown-list2{
@@ -391,6 +392,20 @@ text-decoration: none;
   padding-right: 30px;
   position: absolute;
   display: none;
+  z-index: 1;
+}
+
+.dropdown-list3{
+  width: max-content;
+  height: max-content;
+  background: #000000;
+  border-radius: 35px;
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+  position: absolute;
+  display: none;
+  z-index: 1;
 }
 
 .dropdown-list--visible{
@@ -516,7 +531,7 @@ text-decoration: none;
 }
 
 input{
-  width: 400px;
+  width: 70%;
   height: 40px;
   background: rgba(46, 236, 197, 0.1);
   border: 1.5px solid #2EECC5;
@@ -585,6 +600,22 @@ input{
   font-size: 18px;
   color: #504E4E;
   cursor: pointer;
+}
+
+.learn_more{
+  background: rgba(46, 236, 197, 0.1);
+  border: 1.5px solid #2EECC5;
+  border-radius: 49px;
+  filter: drop-shadow(0px 0px 62px rgba(46, 236, 197, 0.15));
+  height: 45px;
+  width: 200px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #504E4E;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 .empty_team p{
@@ -747,6 +778,150 @@ input{
   margin: 0;
 }
 
+.trainers{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  height: max-content;
+  width: 100%;
+}
+
+.trainer .trainer_photo{
+  width: 300px;
+  height: 400px;
+  border-radius: 25px;
+}
+
+.gradient{
+  width: 300px;
+  height: 400px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  border-radius: 25px;
+}
+
+.button_video{
+  height: 50px;
+  width: 50px;
+
+}
+
+.back{
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(46, 236, 197, 0.3);
+  box-shadow: 0px 0px 250px rgba(46, 236, 197, 0.8);
+  opacity: 0;
+  transition: .5s;
+  padding: 0;
+}
+
+.trainer_card:hover .back{
+  opacity: 1;
+}
+
+.trainer_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.trainer_name{
+  position: absolute; 
+  z-index: 1;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  text-align: left;
+  color: #2EECC5;
+  text-shadow: 0px 0px 36px rgba(165, 252, 235, 0.2);
+  bottom: 0;
+  left: 5%;
+}
+
+.schedule_table{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.date{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+}
+
+.day{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0;
+  color: rgba(61, 61, 63, 0.9);
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.figure{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  color: #2EECC5;
+  align-self: center;
+  margin: 0;
+}
+
+.time{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(61, 61, 63, 0.9);
+}
+
+.cell{
+  height: 110px;
+  width: 160px;
+  background-color: #F5F5F5;
+}
+
+.subject{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3D3D3F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -819,13 +994,13 @@ input{
     margin-top: 10px;
   }
 
-  table{
+  .table{
     width: max-content;
     height: max-content;
 
   }
 
-  table th{
+  .table th{
     width: max-content;
     font-family: 'Open Sans';
     font-style: normal;
@@ -836,7 +1011,7 @@ input{
     margin-bottom: 12px;
   }
 
-  table td{
+  .table td{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 200;
@@ -845,7 +1020,7 @@ input{
     margin-bottom: 12px;
   }
 
-  table button{
+  .table button{
     filter: drop-shadow(0px 0px 62px #2eecc5);
     width: max-content;
     height: 20px;

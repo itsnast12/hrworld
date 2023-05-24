@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="schedule.js" defer></script>
+  </head>
+  <body class="body">
+
+    <div class="buttonsmenu">
+
+        <button class="logo">
+          <img  src="media/logo.png">
+        </button>
+
+        <!-- <a class="menu mar" href="#">
+          <img src="media/packages.png">
+        </a>
+ -->
+        
+          <a class="menu exit" href="index.html">
+          <img src="media/exit.png">
+          </a>
+       
+
+       
+      
+    </div>
+
+    <div class="main">
+      <nav class="nav">
+        <div class="buttons">
+          <button class="but" type="button">
+            <img class="icon" src="media/market.svg" alt="" />
+          </button>
+          <button class="but" type="button">
+            <img class="icon" src="media/finance.svg" alt="" />
+          </button>
+          <div>
+            <button class="but down" type="button">
+            <img class="icon" src="media/community.svg" alt="" />
+            <img class="row" src="media/row.svg" alt="" />
+          </button>
+
+           <ul class="dropdown-list1">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/teacher.png">
+                          <a href="trainers.html">Trainers</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/blog.png">
+                          <a href="index.html">Blog</a>
+                        </li>
+                    </ul> 
+          </div>
+          <button class="but" type="button">
+            <img class="icon" src="media/project.svg" alt="" />
+          </button>
+
+          <div class="form-group">
+              
+                <div class="dropdown"></div>
+                    <button class="signin">
+                        <img class="photo" src="media/img.jpg" alt="" />
+                        <p>Name L.</p>
+                        <img class="row" src="media/row.svg" alt="" />
+                    </button>
+                    <ul class="dropdown-list2">
+                        <li class="dropdown-list-item" data-value="area">
+                          <img src="media/area.png">
+                          <a href="index.html">Personal area</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="packages">
+                          <img src="media/packages.png">
+                          <a href="packages.html">Packages</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="settings">
+                          <img src="media/settings.png">
+                          <a href="settings.html">Settings</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/clock.png">
+                          <a href="schedule.html">Schedule</a>
+                        </li>
+                        <li class="dropdown-list-item" data-value="exit">
+                          <img src="media/exit.png">
+                          <a href="index.html">Exit</a>
+                        </li>
+                    </ul>
+                </div>
+
+            <button class=" burger" type="button">
+            <img class="icon" src="media/burger.svg" alt="" />
+          </button>
+
+        </div>
+      </nav>
+
+      <p class="title_packages" id="myteam">Schedule</p>
+
+      <div>
+        <button class="but subj" type="button" style="margin-bottom: 0px; margin-top: 0; margin-left: 105px;">
+          <p class="subject">Пакет "Экономика"</p>
+        <img class="row" src="media/row.svg" alt="" />
+      </button>
+
+       <ul class="dropdown-list3" style="margin-bottom: 50px; margin-top: 0; margin-left: 105px;">
+              <li class="dropdown-list-item" data-value="area" style="margin: 10px;">
+                <a href="schedule.html">Не экономика</a>
+              </li>
+              <li class="dropdown-list-item" data-value="packages" style="margin: 10px;">
+                <a href="schedule.html">Какой то еще пакет</a>
+              </li>
+              <li class="dropdown-list-item" data-value="settings" style="margin: 10px;">
+                <a href="schedule.html">Пакетик</a>
+              </li>
+              <li class="dropdown-list-item" data-value="exit" style="margin: 10px;">
+                <a href="schedule.html">Еще пакетик</a>
+              </li>
+          </ul> 
+      </div>
+      
+
+
+
+
+      <div class="schedule">
+        <table class="schedule_table">
+          <tr><th></th><th>
+            <div class="date">
+              <p class="day">Пн</p>
+              <p class="figure">22</p>
+            </div>
+          </th>
+          <th>
+            <div class="date">
+              <p class="day">Вт</p>
+              <p class="figure">23</p>
+            </div>
+          </th>
+          <th>
+            <div class="date">
+              <p class="day">Ср</p>
+              <p class="figure">24</p>
+            </div>
+          </th>
+          <th>
+            <div class="date">
+              <p class="day">Чт</p>
+              <p class="figure">25</p>
+            </div>
+          </th>
+          <th>
+            <div class="date">
+              <p class="day">Пт</p>
+              <p class="figure">26</p>
+            </div>
+          </th>
+          <th>
+            <div class="date">
+              <p class="day">Сб</p>
+              <p class="figure">27</p>
+            </div>
+          </th>
+          <th>
+            <div class="date">
+              <p class="day">Вс</p>
+              <p class="figure">28</p>
+            </div>
+          </th>
+        </tr> <!--ряд с ячейками заголовков-->
+
+
+
+          <tr>
+            <th class="time">9:30 - 10:30</th>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+          </tr>
+
+
+          <tr>
+            <th class="time">10:30 - 11:30</th>
+            
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+            
+          </tr>
+          <tr>
+            <th class="time" >11:30 - 12:30</th>
+            
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>
+
+            <td>
+              <div class="cell"></div>
+            </td>          </tr>
+
+        </table>
+      </div>
+      
+
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
