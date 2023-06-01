@@ -59,8 +59,8 @@ body {
 }
 
 .navbar-brand img {
-  height: 100px;
-  width: 100px;
+  height: 325px;
+  width: 250px;
   margin-left: 30px;
 }
 
@@ -179,9 +179,9 @@ body {
 
 .logo {
   display: block;
-  height: 200px;
-  width: 200px;
+  height: 320px;
   z-index: 1;
+  margin: 0;
 }
 
 .tree {
@@ -651,4 +651,61 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.burger {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.burger img{
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px){
+  body{
+    width: 100%;
+  }
+
+  .first{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .navbar-menu{
+    display: none;
+  }
 }

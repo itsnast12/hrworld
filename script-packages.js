@@ -6,14 +6,7 @@ document.querySelector(".down").addEventListener("click", ()=>{
 	document.querySelector(".dropdown-list1").classList.toggle("dropdown-list--visible");
 })
 
-const arrowIcons = document.querySelectorAll(".scrollbutton");
-const slider = document.querySelector(".wrapper");
-const firstCard = document.querySelectorAll(".packages_slider")[0];
 
-let firstCardWidth = firstCard.clientWidth + 15;
-
-arrowIcons.forEach(button => {
-	button.addEventListener("click", () => {
-		slider.scrollLeft += button.id == "left" ? -firstCardWidth : firstCardWidth;
-	});
-});
+document.querySelector(".subj").addEventListener("click", ()=>{
+	document.querySelector(".dropdown-list3").classList.toggle("dropdown-list--visible");
+})
