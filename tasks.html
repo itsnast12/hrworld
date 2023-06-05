@@ -5,27 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="payment.js" defer></script>
+    <script src="tasks.js" defer></script>
   </head>
   <body class="body">
 
     <div class="buttonsmenu">
 
+      <div class="buttonsmenu_menu" style="margin-left: auto; margin-right: auto;">
+
         <button class="logo">
           <img  src="media/logo.png">
         </button>
-
-        <!-- <a class="menu mar" href="#">
-          <img src="media/packages.png">
-        </a>
- -->
         
           <a class="menu exit" href="index.html">
-            <img src="media/exit.svg">
+          <img src="media/exit.svg">
           </a>
-       
+      </div>
 
-       
       
     </div>
 
@@ -98,72 +94,65 @@
         </div>
       </nav>
 
-      <p class="title_packages" id="myteam">Order list</p>
+      <p class="title_packages" id="myteam">Tasks</p>
 
-      <div class="payment_blocks">
-        <div class="order">
-            <p class="price" style="margin-bottom: 20px;">$250 <br> 25000 HRWT</p>
-            <p class="describe">Всё что в пакете за 100$ <br>+ Курс по P2P заработку</p>
-            <p class="up">Адресс кошелька:</p>
-            <p class="describe">0x04a5739471B210815c69f08F6358914dE194c843</p>
-
-            <div style="display: flex; justify-content: space-between; align-items: center; width: 90%;">
-              <div>
-                <p class="up" style="margin: 0; margin-right: 10px; text-align: left;">Сеть блокчейн:</p>
-                <p class="describe" style="text-align: left;">Polygon</p>
-              </div>
-
-              <img src="media/qr.jpg" alt="">
-            </div>
-
-        </div>
-
-        <div class="details" style="display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; ">
-                <p class="detail">Order details</p>
-
-            </div>
-
-                <p class="total">Total: </p>
-                <p class="price_pay">250.00 USDT</p>
-
-
-            <div style="display: flex; flex-direction: column;">
-              <div class="personalarea" style="margin-top: 10px;">
-                <p class="for_input">Package </p>
-                <input type="text" placeholder="">
-            </div>
-            <div class="personalarea">
-                <p class="for_input">First/Last name</p>
-                <input type="text" placeholder="">
-            </div>
-            <div class="personalarea">
-                <p class="for_input">E-mail</p>
-                <input type="text" placeholder="">
-            </div>
-
-            <div class="personalarea" style="margin-top: 10px;">
-                <p class="for_input"></p>
-                <button class="save">Я оплатил</button>
-            </div>
-            </div>
-            
-           
-        </div>
-
-      </div>
-
-        <p class="description_order" style="margin-left: 20px;">Order description</p>
-        <p class="points" style="margin-left: 20px;">• 4 разделов <br>• 14 лекций <br>• Общая продолжительность 3 ч 2 мин <br>На этом курсе мы научим вас P2P Арбитражу, арбитражу в криптовалюте. В двух словах Р2Р - это рынок, где есть продавцы и есть покупатели. Первое время после обучения уверенно можно зарабатывать как два-три процента от суммы стартового капитала.</p>
-
-      </div>
-
-
-        
       
-
-
+      <div class="tasks_line" >
+        <div class="task">
+          <div class="task_text" style="display: flex; flex-direction: column;">
+            <p class="task_price">50 hrwt</p>
+            <p class="task_description">Напиши комментарий на торговой площадке</p>
+            <button class="task_button">Проверить</button>
+          </div>
+          <img class="task_img" src="media/comment.svg" alt="">
+        </div>
+        <div class="task">
+          <div class="task_text">
+            <p class="task_price">50 hrwt</p>
+            <p class="task_description">Напиши комментарий на торговой площадке</p>
+            <button class="task_button">Проверить</button>
+          </div>
+          <img class="task_img" src="media/comment.svg" alt="">
+        </div>
       </div>
-    </div>
+
+      <div class="tasks_line">
+        <div class="task">
+          <div class="task_text" style="display: flex; flex-direction: column;">
+            <p class="task_price">50 hrwt</p>
+            <p class="task_description">Купить образовательный пакет на неделю </p>
+            <button class="task_button">Проверить</button>
+          </div>
+          <img class="task_img" src="media/phone.svg" alt="">
+        </div>
+        <div class="task">
+          <div class="task_text">
+            <p class="task_price">50 hrwt</p>
+            <p class="task_description">Купить образовательный пакет на неделю </p>
+            <button class="task_button">Проверить</button>
+          </div>
+          <img class="task_img" src="media/phone.svg" alt="">
+        </div>
+      </div>
+
+      <div class="tasks_line">
+        <div class="task">
+          <div class="task_text" style="display: flex; flex-direction: column;">
+            <p class="task_price">50 hrwt</p>
+            <p class="task_description">Пригласи друга, чтобы он купил пакет на неделю</p>
+            <button class="task_button">Проверить</button>
+          </div>
+          <img class="task_img" src="media/Hand.svg" alt="">
+        </div>
+        <div class="task">
+          <div class="task_text">
+            <p class="task_price">50 hrwt</p>
+            <p class="task_description">Пригласи друга, чтобы он купил пакет на неделю</p>
+            <button class="task_button">Проверить</button>
+          </div>
+          <img class="task_img" src="media/Hand.svg" alt="">
+        </div>
+      </div>
+    
   </body>
 </html>

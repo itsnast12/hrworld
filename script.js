@@ -25,26 +25,30 @@ for (let anchor of anchors) {
   });
 }
 
-// let buttonsmenu = document.querySelector(".js-buttonsmenu");
-// let buttonsmenuH = document.querySelector(".js-buttonsmenu").clientHeight;
 
-// document.onscroll = function() {
-// 	let scroll = window.scrollY;
-// 	console.log(scroll)
+let elem = document.querySelector(".dropdown-list2")
 
-// 	if (scroll > 1 ){
-// 		buttonsmenu.classList.add("fixed");
-// 	}
-// }
-
-document.querySelector(".signin").addEventListener("click", () => {
-  document
-    .querySelector(".dropdown-list2")
-    .classList.toggle("dropdown-list--visible");
+document.querySelector(".signin").addEventListener("click", (e) => {
+  console.log('ff')
+  elem.classList.toggle("dropdown-list--visible");
 });
 
-document.querySelector(".down").addEventListener("click", () => {
+document.querySelector(".down").addEventListener("click", (e) => {
+  e.stopPropagation();
   document
     .querySelector(".dropdown-list1")
     .classList.toggle("dropdown-list--visible");
 });
+
+
+
+document.addEventListener('click', (e)=>{
+  if (e.target !== document.querySelector(".signin")){
+    document
+    .querySelector(".dropdown-list2")
+    .classList.remove("dropdown-list--visible");
+    document
+    .querySelector(".dropdown-list1")
+    .classList.remove("dropdown-list--visible");
+  }
+})

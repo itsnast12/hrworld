@@ -1,4 +1,4 @@
-body {
+.body {
   background-color: #232323;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   height: 100px;
   z-index: 99;
   transition: all 0.3s ease-out 0s;
-  background: rgba(0, 0, 0, 0.5);
+  background: #232323;
 }
 
 .navbar .container {
@@ -179,7 +179,7 @@ body {
 
 .logo {
   display: block;
-  height: 320px;
+  height: 390px;
   z-index: 1;
   margin: 0;
 }
@@ -198,7 +198,6 @@ body {
   font-weight: 600;
   font-size: 45px;
   color: #2eecc5;
-  text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
   margin: 15px;
   margin-left: 0;
 }
@@ -221,7 +220,6 @@ body {
   font-weight: 600;
   font-size: 25px;
   color: #2eecc5;
-  text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
   margin: 0;
   text-align: center;
   padding: 0;
@@ -376,8 +374,8 @@ body {
 }
 
 .b_photo img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 .possibil img {
@@ -402,8 +400,7 @@ body {
 }
 
 .pack {
-  width: 242px;
-  height: 394px;
+  height: 410px;
   margin-bottom: 80px;
   margin-top: 80px;
 }
@@ -609,20 +606,17 @@ body {
 input {
   width: 280px;
   height: 40px;
-  background: rgba(46, 236, 197, 0.1);
+  background: #283633;
   border: 1.5px solid #2eecc5;
   border-radius: 49px;
-  filter: drop-shadow(0px 0px 62px #2eecc5);
   font-family: "Open Sans";
+  color: #ffffff;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   padding-left: 15px;
 }
 
-input placeholder {
-  color: white;
-}
 
 input:first-child {
   margin-right: 30px;
@@ -635,12 +629,12 @@ input:first-child {
 textarea {
   width: 620px;
   height: 180px;
-  background: rgba(46, 236, 197, 0.1);
+  background: #283633;
   border: 1.5px solid #2eecc5;
   border-radius: 35px;
-  filter: drop-shadow(0px 0px 62px #2eecc5);
   font-family: "Open Sans";
   font-style: normal;
+  color: #ffffff;
   font-weight: 400;
   font-size: 18px;
   padding-left: 15px;
@@ -655,7 +649,7 @@ textarea {
 
 .burger {
   width: max-content;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding-left: 10px;
@@ -692,20 +686,45 @@ textarea {
 
 
 @media (max-width: 550px){
-  body{
+  .body{
     width: 100%;
   }
 
   .first{
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  }
+
+  .logo{
+    display: none;  
+  }
+
+  .cards{
+    flex-direction: column;
+  }
+
+  .third{
+    flex-direction: column;
   }
 
   .left{
     width: 100%;
+    justify-content: center;  
   }
 
   .navbar-menu{
     display: none;
+  }
+
+  .burger{
+    display: flex;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  .description{
+    text-align: center;
   }
 }
