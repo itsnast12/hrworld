@@ -37,7 +37,7 @@
 
 .navbar-menu li a {
   display: inline-block;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -54,12 +54,12 @@
 .enter {
   display: inline-block;
   padding: 0;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-right: 20px;
 }
 
 .navbar-brand img {
-  height: 325px;
+
   width: 250px;
   margin-left: 30px;
 }
@@ -88,9 +88,9 @@
 
 .enter a {
   color: white;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -112,9 +112,9 @@
 
 .enter_button a {
   color: white;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -137,9 +137,9 @@
 
 .know_button a {
   color: white;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -161,9 +161,9 @@
 
 .token_button a {
   color: white;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
 }
 
@@ -182,6 +182,7 @@
   height: 390px;
   z-index: 1;
   margin: 0;
+  margin-right: 120px;
 }
 
 .tree {
@@ -193,7 +194,7 @@
 }
 
 .title {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -202,8 +203,18 @@
   margin-left: 0;
 }
 
+.title-footer {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  color: #2eecc5;
+  margin: 15px;
+  margin-left: 0;
+}
+
 .title-right {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -215,7 +226,7 @@
 }
 
 .title_mini {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -226,7 +237,7 @@
 }
 
 .title_min {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 42px;
@@ -244,29 +255,38 @@
 
 .rright {
   padding: 40px;
-  width: 60%;
+  width: 70%;
 }
 
 .description {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+}
+
+.description-footer {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
 .description-right {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.65);
   text-align: right;
 }
 
 .descr_mini {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
@@ -275,7 +295,7 @@
 }
 
 .descr_min {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 50;
   font-size: 23px;
@@ -399,6 +419,13 @@
   margin-top: 40px;
 }
 
+.forms{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
 .pack {
   height: 410px;
   margin-bottom: 80px;
@@ -503,12 +530,14 @@
   right: -10px;
 }
 
-.slider_main {
+.our_projects {
   /*  white-space: nowrap;*/
   display: flex;
-  width: 4000px;
-  scroll-behavior: smooth;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
   /*  clear: both;*/
 }
 
@@ -595,7 +624,7 @@
 }
 
 .describe_main {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -665,6 +694,10 @@ textarea {
 }
 
 
+.brand img{
+  height: 100px;
+}
+
 
 
 
@@ -691,8 +724,11 @@ textarea {
   }
 
   .first{
+    display: none;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: 0;
   }
 
   .logo{
@@ -701,15 +737,19 @@ textarea {
 
   .cards{
     flex-direction: column;
+    width: 100%;
   }
 
   .third{
+    display: none;
     flex-direction: column;
+    width: 100%;
   }
 
   .left{
     width: 100%;
     justify-content: center;  
+    align-items: center;
   }
 
   .navbar-menu{
@@ -722,9 +762,212 @@ textarea {
 
   .title{
     text-align: center;
+    margin: 0;
   }
 
-  .description{
+  .description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+  }
+  
+  .description-footer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+  }
+  
+  .description-right {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: right;
+  }
+  
+  .descr_mini {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
     text-align: center;
   }
+  
+  .descr_min {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 50;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: right;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .description{
+    text-align: center;
+    margin: 0;
+  }
+
+  .title_min {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2eecc5;
+    text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .descr_min{
+    text-align: center;
+  }
+
+  .third {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .tree {
+    display: block;
+    height: 435px;
+    width: 629px;
+    z-index: 1;
+    margin-right: 0px;
+  }
+
+  .title-right {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2eecc5;
+    text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
+    margin: 15px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .description-right{
+    text-align: center;
+  }
+
+  .image_wrapper{
+    display: none;
+  }
+
+  .our_projects {
+    /*  white-space: nowrap;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*  clear: both;*/
+  }
+
+  .second{
+    width: 100%;
+  }
+
+  .contacts{
+    display: none;
+  }
+
+  .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .rright{
+    width: 100%;
+    margin: 0;
+  }
+
+  .lleft{
+    width: 100%;
+    margin: 0;
+  }
+
+  .fifth{
+    display: none;
+    width: 100%;
+  }
+
+  .forms{
+    display: none;
+  }
+
+  .line{
+    display: none;
+  }
+
+
+.title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2eecc5;
+  margin: 15px;
+  margin-left: 0;
+}
+
+.title-footer {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2eecc5;
+  margin: 15px;
+  margin-left: 0;
+}
+
+.title-right {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2eecc5;
+  text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
+  margin: 15px;
+  margin-left: 0;
+  text-align: right;
+}
+
+.title_mini {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2eecc5;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.title_min {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2eecc5;
+  text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
+  margin: 0;
+  text-align: right;
+  padding: 0;
+}
 }
