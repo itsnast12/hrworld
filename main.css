@@ -186,6 +186,7 @@
 }
 
 .tree {
+  position: absolute;
   display: block;
   height: 435px;
   width: 629px;
@@ -400,6 +401,7 @@
 
 .possibil img {
   margin-bottom: 20px;
+  width: 130px;
 }
 
 .possibil {
@@ -698,6 +700,25 @@ textarea {
   height: 100px;
 }
 
+.possibil_team img{
+  width: 200px;
+
+}
+
+.possibil_team{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.possibility{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%;
+}
+
 
 
 
@@ -724,15 +745,22 @@ textarea {
   }
 
   .first{
-    display: none;
+    /* display: none; */
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     margin: 0;
   }
 
+  .enter_button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
   .logo{
-    display: none;  
+    display: none;
   }
 
   .cards{
@@ -741,15 +769,22 @@ textarea {
   }
 
   .third{
-    display: none;
-    flex-direction: column;
     width: 100%;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .left{
     width: 100%;
-    justify-content: center;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
     align-items: center;
+    padding: 10px;
   }
 
   .navbar-menu{
@@ -799,6 +834,7 @@ textarea {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.65);
     text-align: center;
+    margin-top: 20px;
   }
   
   .descr_min {
@@ -832,21 +868,7 @@ textarea {
     text-align: center;
   }
 
-  .third {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-  }
 
-  .tree {
-    display: block;
-    height: 435px;
-    width: 629px;
-    z-index: 1;
-    margin-right: 0px;
-  }
 
   .title-right {
     font-family: "Open Sans";
@@ -879,9 +901,6 @@ textarea {
     /*  clear: both;*/
   }
 
-  .second{
-    width: 100%;
-  }
 
   .contacts{
     display: none;
@@ -911,9 +930,6 @@ textarea {
     display: none;
   }
 
-  .line{
-    display: none;
-  }
 
 
 .title {
@@ -922,8 +938,8 @@ textarea {
   font-weight: 600;
   font-size: 20px;
   color: #2eecc5;
-  margin: 15px;
-  margin-left: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .title-footer {
@@ -970,4 +986,52 @@ textarea {
   text-align: right;
   padding: 0;
 }
+
+.possibil img {
+  width: 50px;
+}
+
+.possibil_team img{
+  width: 100px;
+}
+
+.circle_photo{
+  display: none;
+}
+
+.second {
+  padding: 10px 10px;
+}
+
+.circle{
+  display: none;
+}
+
+
+.possibility{
+  margin-top: 70px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tree {
+  display: none;
+}
+
+.know_button{
+  margin-top: 20px;
+}
+
+.line {
+  margin: 0px;
+}
+
+.possibil_team{
+  position: static;
+}
+
+
+
 }
