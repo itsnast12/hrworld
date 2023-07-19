@@ -54,7 +54,7 @@
 .enter {
   display: inline-block;
   padding: 0;
-  margin-left: 60px;
+  margin-left: 10px;
   margin-right: 20px;
 }
 
@@ -144,14 +144,16 @@
 }
 
 .token_button {
-  display: inline-block;
   padding: 0;
+  width: max-content; 
+  height: max-content; 
+  float: right;
 }
 
 .token_button {
   filter: drop-shadow(0px 0px 12px #2eecc5);
-  width: 200px;
-  height: 40px;
+  width: 170px;
+  height: 30px;
   text-align: center;
   border-radius: 49px;
   border: 1.5px solid #2eecc5;
@@ -163,7 +165,7 @@
   color: white;
   font-family: "Open Sans";
   font-weight: 300;
-  font-size: 17px;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -247,6 +249,8 @@
   margin: 0;
   text-align: right;
   padding: 0;
+  text-align: center; 
+  margin-top: 50px;
 }
 
 .left {
@@ -275,6 +279,7 @@
   font-size: 18px;
   color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .description-right {
@@ -307,6 +312,13 @@
 }
 
 .right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_map{
   width: 40%;
   display: flex;
   align-items: center;
@@ -363,6 +375,7 @@
 }
 
 .circle_photo {
+  position: relative;
   opacity: 0;
   transition: 0.5s;
   cursor: pointer;
@@ -411,6 +424,10 @@
 }
 
 .second {
+  padding: 0px 120px;
+}
+
+.second_name {
   padding: 0px 120px;
 }
 
@@ -690,8 +707,8 @@ textarea {
 }
 
 .burger img{
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   color: #ffffff;
 }
 
@@ -716,9 +733,58 @@ textarea {
   display: flex; 
   flex-direction: column; 
   align-items: center; 
-  width: 100%;
+  width: 400px;
 }
 
+.team_name{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 400px;
+}
+
+.packages_slider img {
+  width: 130px; 
+  height: 130px;
+}
+
+.footer_first{
+  width: 20%; 
+  margin-left: 40px;
+}
+
+.footer_second{
+  width: 20%; 
+  margin-left: 70px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.footer_third{
+  width: 20%; 
+  margin-left: 50px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.footer_forth{
+  width: 20%; 
+  margin-left: 50px; 
+  margin-right: 60px;
+}
+
+.footer_fifth{
+  width: 20%; 
+  margin-left: 40px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.networks{
+  width: 35px; 
+  filter: drop-shadow(0px 0px 62px rgba(46, 236, 197, 0.5)); 
+  margin-right: 10px;
+}
 
 
 
@@ -766,25 +832,31 @@ textarea {
   .cards{
     flex-direction: column;
     width: 100%;
+    margin-top: 0px;
   }
 
   .third{
-    width: 100%;
-    height: 400px;
+    width: 370px;
+    height: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
     margin-top: 40px;
+    margin: 0;
+    padding: 0;
   }
 
   .left{
-    width: 100%;
+    width: 370px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
     align-items: center;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navbar-menu{
@@ -792,19 +864,20 @@ textarea {
   }
 
   .burger{
-    display: flex;
+    display: none;
   }
 
   .title{
     text-align: center;
     margin: 0;
+    margin-top: 40px;
   }
 
   .description {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
   }
@@ -816,36 +889,31 @@ textarea {
     font-size: 10px;
     color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
+    margin-bottom: 5px;
   }
   
-  .description-right {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.65);
-    text-align: right;
-  }
+
   
   .descr_mini {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 12px;
     color: rgba(255, 255, 255, 0.65);
     text-align: center;
     margin-top: 20px;
+    width: 370px;
   }
   
   .descr_min {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 50;
-    font-size: 15px;
+    font-size: 12px;
     color: rgba(255, 255, 255, 0.65);
     text-align: right;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
   .description{
     text-align: center;
@@ -853,12 +921,7 @@ textarea {
   }
 
   .title_min {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #2eecc5;
-    text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
+    font-size: 17px;
     margin: 0;
     text-align: center;
     padding: 0;
@@ -871,19 +934,13 @@ textarea {
 
 
   .title-right {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #2eecc5;
-    text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
-    margin: 15px;
-    margin-left: 0;
+    font-size: 23px;
     text-align: center;
   }
 
   .description-right{
     text-align: center;
+    font-size: 15px;
   }
 
   .image_wrapper{
@@ -903,17 +960,28 @@ textarea {
 
 
   .contacts{
-    display: none;
+    flex-direction: column;
+  }
+
+  .brand img{
+    height: 50px;
   }
 
   .right {
     width: 100%;
     margin: 0;
+    padding: 0;
   }
 
   .rright{
     width: 100%;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
   }
 
   .lleft{
@@ -922,115 +990,313 @@ textarea {
   }
 
   .fifth{
-    display: none;
-    width: 100%;
+    width: 370px;
+    padding: 0;
+    margin: 0;
   }
 
   .forms{
-    display: none;
+
   }
 
 
 
-.title {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  color: #2eecc5;
-  margin: 0;
-  margin-bottom: 20px;
-}
+  .title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2eecc5;
+    margin: 0;
+    margin-bottom: 10px;
+  }
 
-.title-footer {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  color: #2eecc5;
-  margin: 15px;
-  margin-left: 0;
-}
+  .title-footer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2eecc5;
+    margin: 15px;
+    margin-left: 0;
+  }
 
-.title-right {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  color: #2eecc5;
-  text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
-  margin: 15px;
-  margin-left: 0;
-  text-align: right;
-}
+  .title-right {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2eecc5;
+    text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
+    margin: 0px;
+    margin-left: 0;
+    text-align: center;
+  }
 
-.title_mini {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  color: #2eecc5;
-  margin: 0;
-  text-align: center;
-  padding: 0;
-}
+  .title_mini {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2eecc5;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
 
-.title_min {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  color: #2eecc5;
-  text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
-  margin: 0;
-  text-align: right;
-  padding: 0;
-}
+  .title_min {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    color: #2eecc5;
+    text-shadow: 0px 0px 50px rgba(46, 236, 197, 0.55);
+    margin: 0;
+    padding: 0;
+  }
 
-.possibil img {
-  width: 50px;
-}
+  .possibil img {
+    width: 50px;
+  }
 
-.possibil_team img{
-  width: 100px;
-}
+  .possibil_team img{
+    width: 170px;
+  }
 
-.circle_photo{
-  display: none;
-}
+  .circle_photo{
+    display: none;
+  }
 
-.second {
-  padding: 10px 10px;
-}
+  .second {
+    padding: 10px 10px;
 
-.circle{
-  display: none;
-}
+  }
+
+  .second_name {
+    padding: 10px 10px;
+    margin-top: 150px;
+  }
+
+  .circle{
+    display: none;
+  }
 
 
-.possibility{
-  margin-top: 70px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  .possibility{
+    margin-top: 70px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 370px;
+  }
 
-.tree {
-  display: none;
-}
+  .team_name{
+    margin-top: 20px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 370px;
+  }
 
-.know_button{
-  margin-top: 20px;
-}
+  .tree {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.line {
-  margin: 0px;
-}
+  .know_button{
+    margin-top: 20px;
+  }
 
-.possibil_team{
-  position: static;
-}
+  .line {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .possibil_team{
+    position: static;
+    top: 20px;
+  }
+
+
+  .pack {
+    height: 210px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .enter_button {
+    filter: drop-shadow(0px 0px 12px #2eecc5);
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 49px;
+    border: 1.5px solid #2eecc5;
+    cursor: pointer;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .enter_button a {
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .nonee{
+    display: none;
+  }
+  
+  .know_button {
+    filter: drop-shadow(0px 0px 12px #2eecc5);
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border-radius: 49px;
+    border: 1.5px solid #2eecc5;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .know_button a {
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .nonee{
+    display: none;
+  }
+
+  .second_team{
+    margin-top: 150px;
+  }
+
+  .describe_main {
+    font-size: 14px;
+  }
+
+  .packages_slider {
+    width: 180px;
+    height: 260px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .packages_slider img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer_first{
+    margin-left: 20px;
+    width: 370px; 
+  }
+  
+  .footer_second{
+    width: 370px; 
+    margin-left: 20px;
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  .footer_third{
+    margin-left: 20px;
+    width: 370px; 
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  .footer_forth{
+    margin-left: 20px;
+    width: 370px; 
+
+  }
+  
+  .footer_fifth{
+    margin-left: 20px;
+    width: 370px; 
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .networks{
+    width: 20px;
+  }
+
+  textarea {
+    width: 350px;
+    height: 150px;
+    background: #283633;
+    border: 1.5px solid #2eecc5;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
+  .two_forms {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 350px;
+    height: 30px;
+    background: #283633;
+    border: 1.5px solid #2eecc5;
+    border-radius: 49px;
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 15px;
+  }
+
+  .right_map{
+    display: none;
+  }
+
+  input:first-child {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .enter {
+    filter: drop-shadow(0px 0px 12px #2eecc5);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 49px;
+    border: 1.5px solid #2eecc5;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .enter a {
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+
+  
 
 
 
